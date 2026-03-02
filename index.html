@@ -23,7 +23,7 @@
   </head>
   <body>
     <!-- Nav Section -->
-    <nav>
+    <!-- <nav>
       <div
         class="max-w-full mx-auto bg-black px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between"
       >
@@ -39,7 +39,8 @@
           অডার করুন
         </a>
       </div>
-    </nav>
+    </nav> -->
+
     <!-- Hero Section -->
     <section class="bg-gray-100">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-16">
@@ -88,6 +89,9 @@
               <p class="text-gray-300">
                 অনলাইন PDF:
                 <span class="font-bold text-white"> ১০০০৳ </span>
+                <span class="text-gray-400 line-through text-base">
+                  ২০০০৳
+                </span>
               </p>
             </div>
 
@@ -139,67 +143,106 @@
         </p>
 
         <div class="space-y-4">
-          <!-- Order Button -->
           <a
             href="#order-section"
             id="orderBtn"
-            class="block w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 rounded-md shadow-md transition duration-300"
+            class="flex items-center justify-center gap-2 w-full bg-amber-500 hover:bg-amber-600 text-white font-semibold py-3 rounded-md shadow-md hover:shadow-lg transition duration-300"
           >
-            👍 অর্ডার করতে চাই
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+              />
+            </svg>
+            অর্ডার করতে চাই
           </a>
 
-          <!-- Call Button -->
           <a
             href="tel:01711338720"
-            class="block w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-md shadow-md transition duration-300"
+            class="flex items-center justify-center gap-2 w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-md shadow-md hover:shadow-lg transition duration-300"
           >
-            📞 কল করতে ক্লিক করুন - 01711338720
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+              />
+            </svg>
+            কল করতে ক্লিক করুন - 01711338720
           </a>
 
-          <!-- WhatsApp Button -->
           <a
             href="https://wa.me/8801711338720"
             target="_blank"
-            class="block w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 rounded-md shadow-md transition duration-300"
+            class="flex items-center justify-center gap-2 w-full bg-[#25D366] hover:bg-[#1DA851] text-white font-semibold py-3 rounded-md shadow-md hover:shadow-lg transition duration-300"
           >
-            💬 Whatsapps - 01711338720
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 fill-current"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"
+              />
+            </svg>
+            WhatsApp - 01711338720
           </a>
         </div>
       </div>
     </section>
 
-    <!--  -->
+    <!-- Video section -->
     <section class="relative py-20">
-      <!-- Background Image -->
-      <div class="absolute inset-0">
+      <!-- <div class="absolute inset-0">
         <img
-          src="./img/istockphoto-155909002-612x612.jpg"
+          src="https://images.unsplash.com/photo-1587734195503-904fca47e0e9?auto=format&fit=crop&w=1920&q=80"
           alt="Tea Garden"
           class="w-full h-full object-cover"
         />
-        <!-- Green Overlay -->
-        <div class="absolute inset-0"></div>
-      </div>
+        <div class="absolute inset-0 bg-white/60 backdrop-blur-[2px]"></div>
+      </div> -->
 
-      <!-- Content -->
       <div class="relative z-10 max-w-5xl mx-auto px-4 text-center">
-        <!-- Heading -->
         <h2
           class="text-3xl md:text-5xl font-bold text-black leading-snug mb-10"
         >
           কিভাবে অল্প পুঁজিতে লাভজনক শিল্প শুরু করবেন? জানুন এই ভিডিওতে।
         </h2>
 
-        <!-- Video Box -->
         <div class="flex justify-center">
           <div
-            class="w-full max-w-xl aspect-video bg-black rounded-lg overflow-hidden shadow-xl"
+            class="w-full max-w-xl aspect-video bg-black rounded-lg overflow-hidden shadow-2xl"
           >
             <iframe
               class="w-full h-full"
-              src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-              title="Tea Video"
+              src="https://www.youtube.com/embed/Yl_FqXp8uqs?si=SSJUX4Cb4A12Tjt-"
+              title="YouTube video player"
               frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
             ></iframe>
           </div>
@@ -207,7 +250,7 @@
       </div>
     </section>
 
-    <!--  -->
+    <!-- About Book  -->
     <section class="py-20 bg-gray-50">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Section Header -->
@@ -288,258 +331,334 @@
       </div>
     </section>
 
-    <!-- Order section -->
-    <section id="order-section" class="py-16 bg-gray-100">
+    <section id="order-section" class="py-16 bg-gray-50">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <!-- Title -->
         <div class="text-center mb-12">
           <h2 class="text-3xl font-bold text-gray-800">
-            অর্ডার করতে সঠিক তথ্য দিয়ে নিচের ফর্মটি পূরণ করুন
+            অর্ডার করতে সঠিক তথ্য দিয়ে নিচের ফর্মটি পূরণ করুন
           </h2>
+          <p class="text-gray-500 mt-2">আপনার তথ্য সম্পূর্ণ নিরাপদ থাকবে</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-          <!-- Billing Details -->
-          <div class="bg-white p-8 rounded-lg shadow">
-            <h3 class="text-xl font-semibold mb-6">Billing details</h3>
+          <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
+            <h3 class="text-xl font-bold text-gray-800 border-b pb-4 mb-6">
+              বিলিং তথ্য
+            </h3>
 
             <div class="space-y-5">
-              <input
-                type="text"
-                placeholder="নাম লিখুন *"
-                class="w-full border border-gray-300 rounded-md px-4 py-3 focus:ring-2 focus:ring-green-500 outline-none"
-              />
+              <div>
+                <label class="block text-gray-700 font-medium mb-2"
+                  >আপনার নাম <span class="text-red-500">*</span></label
+                >
+                <input
+                  id="customerName"
+                  type="text"
+                  placeholder="নাম লিখুন"
+                  class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-green-500 outline-none transition-all"
+                  required
+                />
+              </div>
 
-              <input
-                type="text"
-                placeholder="সম্পূর্ণ ঠিকানা লিখুন *"
-                class="w-full border border-gray-300 rounded-md px-4 py-3 focus:ring-2 focus:ring-green-500 outline-none"
-              />
+              <div>
+                <label class="block text-gray-700 font-medium mb-2"
+                  >আপনার ঠিকানা <span class="text-red-500">*</span></label
+                >
+                <input
+                  id="customerAddress"
+                  type="text"
+                  placeholder="সম্পূর্ণ ঠিকানা লিখুন"
+                  class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-green-500 outline-none transition-all"
+                  required
+                />
+              </div>
 
-              <input
-                type="text"
-                placeholder="ফোন নাম্বার লিখুন *"
-                class="w-full border border-gray-300 rounded-md px-4 py-3 focus:ring-2 focus:ring-green-500 outline-none"
-              />
+              <div>
+                <label class="block text-gray-700 font-medium mb-2"
+                  >ফোন নাম্বার <span class="text-red-500">*</span></label
+                >
+                <input
+                  id="customerPhone"
+                  type="tel"
+                  placeholder="০১৭xxxxxxxx"
+                  class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-green-500 outline-none transition-all"
+                  required
+                />
+              </div>
 
-              <textarea
-                placeholder="Notes about your order (optional)"
-                class="w-full border border-gray-300 rounded-md px-4 py-3 h-24 focus:ring-2 focus:ring-green-500 outline-none"
-              ></textarea>
+              <div>
+                <label class="block text-gray-700 font-medium mb-2"
+                  >অতিরিক্ত নোট (ঐচ্ছিক)</label
+                >
+                <textarea
+                  id="orderNotes"
+                  placeholder="অর্ডার সম্পর্কে কোনো নোট থাকলে লিখুন"
+                  class="w-full border border-gray-300 rounded-lg px-4 py-3 h-24 focus:ring-2 focus:ring-green-500 outline-none transition-all resize-none"
+                ></textarea>
+              </div>
+
+              <div>
+                <label class="block text-gray-700 font-medium mb-2"
+                  >বইয়ের ধরন <span class="text-red-500">*</span></label
+                >
+                <select
+                  id="bookFormat"
+                  class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-green-500 outline-none bg-white cursor-pointer transition-all"
+                >
+                  <option value="Hard">হার্ড কপি (প্রিন্টেড বই)</option>
+                  <option value="PDF">পিডিএফ ভার্সন</option>
+                </select>
+              </div>
             </div>
           </div>
 
-          <!-- quantity  -->
-          <div class="bg-white p-8 rounded-lg shadow">
-            <h3 class="text-xl font-semibold mb-6">Your order</h3>
+          <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
+            <h3 class="text-xl font-bold text-gray-800 border-b pb-4 mb-6">
+              আপনার অর্ডার
+            </h3>
 
             <div class="border-b pb-4 mb-4">
               <div class="flex justify-between items-center mb-4">
                 <div class="flex items-center gap-4">
                   <img
-                    class="w-12 h-16 rounded-md"
+                    class="w-14 h-20 rounded-md object-cover border shadow-sm"
                     src="./img/WhatsApp Image 2026-02-23 at 11.45.59 PM.jpeg"
-                    alt=""
+                    alt="Product Image"
                   />
-
                   <div>
-                    <p class="font-medium text-gray-800">Product A</p>
-
-                    <div class="flex items-center gap-2 mt-1">
-                      <button
-                        id="minusBtn"
-                        class="font-bold border border-gray-300 rounded px-2 py-1 hover:bg-gray-200"
+                    <p class="font-bold text-gray-800 leading-snug">
+                      সাফল্যের সূত্র: শিল্প স্থাপনে <br />
+                      কোটিপতি প্রজেক্ট প্রোফাইল
+                    </p>
+                    <div
+                      id="quantitySection"
+                      class="flex items-center gap-3 mt-2 transition-all duration-300"
+                    >
+                      <span class="text-sm text-gray-500">পরিমাণ:</span>
+                      <div
+                        class="flex items-center border border-gray-300 rounded-md overflow-hidden"
                       >
-                        -
-                      </button>
-
-                      <span id="quantity" class="px-2">1</span>
-
-                      <button
-                        id="plusBtn"
-                        class="font-bold border border-gray-300 rounded px-2 py-1 hover:bg-gray-200"
-                      >
-                        +
-                      </button>
+                        <button
+                          id="minusBtn"
+                          class="font-bold px-3 py-1 bg-gray-100 hover:bg-gray-200 transition"
+                        >
+                          -
+                        </button>
+                        <span
+                          id="quantity"
+                          class="px-3 font-semibold text-gray-800"
+                          >1</span
+                        >
+                        <button
+                          id="plusBtn"
+                          class="font-bold px-3 py-1 bg-gray-100 hover:bg-gray-200 transition"
+                        >
+                          +
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
-
-                <!-- Price -->
-                <span id="price" class="font-semibold text-gray-800">
-                  1000.00৳
+                <span class="font-bold text-gray-800 whitespace-nowrap">
+                  <span id="itemPriceDisplay">1000.00</span>৳
                 </span>
               </div>
             </div>
 
-            <div class="flex justify-between mb-2">
-              <span>Subtotal</span>
-              <span>1000.00৳</span>
+            <div class="flex justify-between mb-3 text-gray-700 font-medium">
+              <span>সাবটোটাল</span>
+              <span><span id="subTotalDisplay">1000.00</span>৳</span>
             </div>
 
-            <!-- Shipping -->
-            <div class="mt-4 mb-4">
-              <p class="font-medium mb-2">Shipping</p>
-
-              <label
-                class="flex justify-between items-center mb-2 cursor-pointer"
-              >
-                <span>
-                  <input type="radio" name="shipping" class="mr-2" />
-                  Outside Dhaka
-                </span>
-                <span>120.00৳</span>
-              </label>
-
-              <label class="flex justify-between items-center cursor-pointer">
-                <span>
-                  <input type="radio" name="shipping" class="mr-2" checked />
-                  Inside Dhaka
-                </span>
-                <span>60.00৳</span>
-              </label>
-            </div>
-
-            <div class="border-t pt-4 flex justify-between font-bold text-lg">
-              <span>Total</span>
-              <span>1060.00৳</span>
-            </div>
-
-            <!-- Payment -->
-            <div class="mt-6">
-              <div class="flex gap-4 mb-4">
-                <!-- Cash on -->
-                <button
-                  class="font-medium mb-2 border-solid border-2 border-gray-300 rounded-md px-4 py-2 hover:bg-gray-200"
+            <div id="shippingSection" class="mb-4 transition-all duration-300">
+              <p class="font-medium text-gray-700 mb-2 mt-4">ডেলিভারি এরিয়া</p>
+              <div class="space-y-2">
+                <label
+                  class="flex justify-between items-center cursor-pointer p-3 border border-gray-200 rounded-lg hover:bg-green-50 hover:border-green-500 transition-all"
                 >
-                  Cash on delivery
+                  <span class="flex items-center text-gray-700 font-medium">
+                    <input
+                      type="radio"
+                      name="shipping"
+                      value="60"
+                      data-area="ঢাকার ভিতরে"
+                      class="mr-3 w-4 h-4 accent-green-600"
+                      checked
+                    />
+                    ঢাকার ভিতরে
+                  </span>
+                  <span class="font-bold">80.00৳</span>
+                </label>
+                <label
+                  class="flex justify-between items-center cursor-pointer p-3 border border-gray-200 rounded-lg hover:bg-green-50 hover:border-green-500 transition-all"
+                >
+                  <span class="flex items-center text-gray-700 font-medium">
+                    <input
+                      type="radio"
+                      name="shipping"
+                      value="120"
+                      data-area="ঢাকার বাইরে"
+                      class="mr-3 w-4 h-4 accent-green-600"
+                    />
+                    ঢাকার বাইরে
+                  </span>
+                  <span class="font-bold">150.00৳</span>
+                </label>
+              </div>
+            </div>
+
+            <div
+              class="border-t border-gray-200 mt-4 pt-4 flex justify-between font-bold text-xl text-green-700"
+            >
+              <span>সর্বমোট</span>
+              <span><span class="finalTotalDisplay">1060.00</span>৳</span>
+            </div>
+
+            <div class="mt-8">
+              <p class="font-bold text-gray-800 mb-3">পেমেন্ট মেথড</p>
+
+              <div class="flex flex-col sm:flex-row gap-3 mb-4">
+                <button
+                  id="codBtn"
+                  class="flex-1 w-full font-bold text-gray-700 border-2 border-gray-300 rounded-lg px-4 py-3 hover:border-gray-800 hover:bg-gray-100 transition shadow-sm text-sm"
+                >
+                  ক্যাশ অন ডেলিভারি
                 </button>
 
-                <!-- Bkash -->
-                <div>
+                <div class="flex-1 w-full">
                   <button
-                    class="font-medium mb-2 border-solid border-2 border-gray-300 rounded-md px-4 py-2 hover:bg-gray-200"
                     onclick="bkash_modal.showModal()"
+                    class="w-full flex justify-center items-center border-2 border-gray-300 rounded-lg px-4 py-2 hover:border-pink-500 hover:bg-pink-50 transition shadow-sm"
                   >
                     <img
-                      class="h-8 w-16"
+                      class="h-8 object-contain"
                       src="https://freelogopng.com/images/all_img/1656227518bkash-logo-png.png"
-                      alt=""
+                      alt="bKash"
                     />
                   </button>
 
                   <dialog id="bkash_modal" class="modal">
-                    <div class="modal-box max-w-4xl p-0 overflow-hidden">
-                      <!-- Close Button -->
+                    <div
+                      class="modal-box max-w-4xl p-0 overflow-hidden rounded-xl bg-white"
+                    >
                       <form method="dialog">
                         <button
-                          class="btn btn-sm btn-circle btn-ghost absolute right-4 top-4"
+                          class="btn btn-sm btn-circle btn-ghost absolute right-4 top-4 text-xl"
                         >
                           ✕
                         </button>
                       </form>
-
-                      <!-- Inner Content -->
-                      <div class="p-8">
-                        <!-- Title -->
-                        <h2 class="text-2xl font-bold mb-2">
-                          Complete Payment
+                      <div class="p-6 md:p-8">
+                        <h2 class="text-xl md:text-2xl font-bold mb-2">
+                          সেন্ড মানি সম্পন্ন করুন
                         </h2>
-                        <p class="text-pink-600 mb-8">
-                          Pay with bKash, then verify your transaction.
+                        <p class="text-pink-600 mb-6 text-sm md:text-base">
+                          বিকাশ দিয়ে সেন্ড মানি করে আপনার ট্রানজেকশনটি ভেরিফাই
+                          করুন।
                         </p>
 
-                        <!-- Main Grid -->
                         <div class="grid md:grid-cols-2 gap-8">
-                          <!-- Left -->
-                          <div class="border rounded-xl p-6 text-center">
-                            <img
-                              src="./img/bKash payment QR code on shopping bag (1).png"
-                              class="mx-auto mb-6 rounded-lg h-80 w-52 object-cover"
-                              alt="QR"
-                            />
-
+                          <div
+                            class="border border-gray-200 rounded-xl p-6 shadow-sm flex flex-col justify-center"
+                          >
                             <div
-                              class="space-y-4 text-sm text-gray-700 text-left"
+                              class="space-y-6 text-sm md:text-base text-gray-700 text-left"
                             >
-                              <div class="flex gap-3">
-                                <div class="step">1</div>
+                              <div class="flex gap-4 items-start">
+                                <div
+                                  class="w-8 h-8 flex-shrink-0 flex items-center justify-center rounded-full bg-pink-600 text-white font-bold"
+                                >
+                                  ১
+                                </div>
                                 <p>
-                                  Open
+                                  বিকাশ অ্যাপ ওপেন করে
                                   <span class="text-pink-600 font-semibold"
-                                    >bKash</span
+                                    >"Send Money"</span
                                   >
-                                  app and tap "Payment"
+                                  নির্বাচন করুন।
                                 </p>
                               </div>
-
-                              <div class="flex gap-3">
-                                <div class="step">2</div>
+                              <div class="flex gap-4 items-start">
+                                <div
+                                  class="w-8 h-8 flex-shrink-0 flex items-center justify-center rounded-full bg-pink-600 text-white font-bold"
+                                >
+                                  ২
+                                </div>
                                 <p>
-                                  Scan QR or enter merchant number <br /><span
-                                    class="font-semibold"
-                                    >01863209902</span
+                                  নিচের নাম্বারটি দিন: <br /><span
+                                    class="font-bold text-lg text-gray-900 mt-1 block"
+                                    >+880 17 1133 8720</span
                                   >
                                 </p>
                               </div>
-
-                              <div class="flex gap-3">
-                                <div class="step">3</div>
+                              <div class="flex gap-4 items-start">
+                                <div
+                                  class="w-8 h-8 flex-shrink-0 flex items-center justify-center rounded-full bg-pink-600 text-white font-bold"
+                                >
+                                  ৩
+                                </div>
                                 <p>
-                                  Pay
+                                  সঠিক এমাউন্ট সেন্ড মানি করুন এবং
                                   <span class="text-pink-600 font-semibold"
-                                    >100 Taka</span
+                                    >Transaction ID</span
                                   >
-                                  and note Transaction ID
+                                  টি কপি করে ডান পাশের ফর্মে দিন।
                                 </p>
                               </div>
                             </div>
                           </div>
 
-                          <!-- Right -->
-                          <div class="border rounded-xl p-6">
+                          <div
+                            class="border border-gray-200 rounded-xl p-6 shadow-sm flex flex-col justify-center text-left"
+                          >
                             <div class="mb-5">
-                              <label class="block mb-2 font-medium">
-                                Enter your bKash number
-                                <span class="text-red-500">*</span>
-                              </label>
+                              <label
+                                class="block mb-2 font-medium text-gray-700"
+                                >আপনার বিকাশ নাম্বারটি দিন
+                                <span class="text-red-500">*</span></label
+                              >
                               <input
+                                id="bkashNumber"
                                 type="text"
-                                placeholder="01XXXXXXXXX"
-                                class="w-full border rounded-lg px-4 py-3 focus:ring-2 focus:ring-pink-500 outline-none"
+                                placeholder="০১৭XXXXXXXX"
+                                required
+                                class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-pink-500 outline-none transition-all"
                               />
                             </div>
-
                             <div class="mb-5">
-                              <label class="block mb-2 font-medium">
-                                Enter your Transaction ID
-                                <span class="text-red-500">*</span>
-                              </label>
+                              <label
+                                class="block mb-2 font-medium text-gray-700"
+                                >Transaction ID টি দিন
+                                <span class="text-red-500">*</span></label
+                              >
                               <input
+                                id="bkashTrx"
                                 type="text"
-                                placeholder="e.g. B1K7G2M5XE"
-                                class="w-full border rounded-lg px-4 py-3 focus:ring-2 focus:ring-pink-500 outline-none"
+                                placeholder="যেমন: B1K7G2M5XE"
+                                required
+                                class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-pink-500 outline-none transition-all"
                               />
                             </div>
-
                             <div class="flex items-center mb-6">
                               <input
                                 type="checkbox"
-                                class="mr-2 accent-pink-600"
+                                class="mr-2 w-4 h-4 accent-pink-600"
                               />
-                              <span class="text-sm">
-                                I agree to the
+                              <span class="text-sm text-gray-600"
+                                >আমি
                                 <a href="#" class="text-pink-600 underline"
-                                  >terms & conditions</a
+                                  >শর্তাবলীর</a
                                 >
-                              </span>
+                                সাথে একমত</span
+                              >
                             </div>
-
-                            <button
-                              class="w-full bg-pink-600 hover:bg-pink-700 text-white py-3 rounded-lg font-semibold transition"
-                            >
-                              Verify Payment
-                            </button>
+                            <form method="dialog">
+                              <button
+                                class="w-full bg-pink-600 hover:bg-pink-700 text-white py-3 rounded-lg font-bold transition-all shadow-md"
+                              >
+                                ভেরিফাই করে সেভ করুন
+                              </button>
+                            </form>
                           </div>
                         </div>
                       </div>
@@ -547,143 +666,138 @@
                   </dialog>
                 </div>
 
-                <!-- Nagad -->
-                <div>
+                <div class="flex-1 w-full">
                   <button
-                    class="font-medium mb-2 border-solid border-2 border-gray-300 rounded-md px-4 py-2 hover:bg-gray-200"
                     onclick="nagad_modal.showModal()"
+                    class="w-full flex justify-center items-center border-2 border-gray-300 rounded-lg px-4 py-2 hover:border-orange-500 hover:bg-orange-50 transition shadow-sm"
                   >
                     <img
-                      class="h-8 w-16"
+                      class="h-8 object-contain"
                       src="https://www.logo.wine/a/logo/Nagad/Nagad-Logo.wine.svg"
-                      alt=""
+                      alt="Nagad"
                     />
                   </button>
 
                   <dialog id="nagad_modal" class="modal">
-                    <div class="modal-box max-w-4xl p-0 overflow-hidden">
-                      <!-- Close Button -->
+                    <div
+                      class="modal-box max-w-4xl p-0 overflow-hidden rounded-xl bg-white"
+                    >
                       <form method="dialog">
                         <button
-                          class="btn btn-sm btn-circle btn-ghost absolute right-4 top-4"
+                          class="btn btn-sm btn-circle btn-ghost absolute right-4 top-4 text-xl"
                         >
                           ✕
                         </button>
                       </form>
-
-                      <!-- Inner Content -->
-                      <div class="p-8">
-                        <!-- Title -->
-                        <h2 class="text-2xl font-bold mb-2">
-                          Complete Payment
+                      <div class="p-6 md:p-8">
+                        <h2 class="text-xl md:text-2xl font-bold mb-2">
+                          সেন্ড মানি সম্পন্ন করুন
                         </h2>
-                        <p class="text-orange-600 mb-8">
-                          Pay with Nagad, then verify your transaction.
+                        <p class="text-orange-600 mb-6 text-sm md:text-base">
+                          নগদ দিয়ে সেন্ড মানি করে আপনার ট্রানজেকশনটি ভেরিফাই
+                          করুন।
                         </p>
 
-                        <!-- Main Grid -->
                         <div class="grid md:grid-cols-2 gap-8">
-                          <!-- Left -->
-                          <div class="border rounded-xl p-6 text-center">
-                            <img
-                              src="./img/ChatGPT Image Mar 2, 2026, 11_20_10 AM.png"
-                              class="mx-auto mb-6 rounded-lg h-80 w-52 object-cover"
-                              alt="QR"
-                            />
-
+                          <div
+                            class="border border-gray-200 rounded-xl p-6 shadow-sm flex flex-col justify-center"
+                          >
                             <div
-                              class="space-y-4 text-sm text-gray-700 text-left"
+                              class="space-y-6 text-sm md:text-base text-gray-700 text-left"
                             >
-                              <div class="flex gap-3">
+                              <div class="flex gap-4 items-start">
                                 <div
-                                  class="w-6 h-6 flex items-center justify-center rounded-full bg-orange-500 text-white text-xs"
+                                  class="w-8 h-8 flex-shrink-0 flex items-center justify-center rounded-full bg-orange-500 text-white font-bold"
                                 >
-                                  1
+                                  ১
                                 </div>
                                 <p>
-                                  Open
+                                  নগদ অ্যাপ ওপেন করে
                                   <span class="text-orange-600 font-semibold"
-                                    >Nagad</span
+                                    >"Send Money"</span
                                   >
-                                  app and tap "Send Money"
+                                  নির্বাচন করুন।
                                 </p>
                               </div>
-
-                              <div class="flex gap-3">
+                              <div class="flex gap-4 items-start">
                                 <div
-                                  class="w-6 h-6 flex items-center justify-center rounded-full bg-orange-500 text-white text-xs"
+                                  class="w-8 h-8 flex-shrink-0 flex items-center justify-center rounded-full bg-orange-500 text-white font-bold"
                                 >
-                                  2
+                                  ২
                                 </div>
                                 <p>
-                                  Scan QR or enter merchant number <br /><span
-                                    class="font-semibold"
-                                    >01863209902</span
+                                  নিচের নাম্বারটি দিন: <br /><span
+                                    class="font-bold text-lg text-gray-900 mt-1 block"
+                                    >+880 17 1133 8720</span
                                   >
                                 </p>
                               </div>
-
-                              <div class="flex gap-3">
+                              <div class="flex gap-4 items-start">
                                 <div
-                                  class="w-6 h-6 flex items-center justify-center rounded-full bg-orange-500 text-white text-xs"
+                                  class="w-8 h-8 flex-shrink-0 flex items-center justify-center rounded-full bg-orange-500 text-white font-bold"
                                 >
-                                  3
+                                  ৩
                                 </div>
                                 <p>
-                                  Pay
+                                  সঠিক এমাউন্ট সেন্ড মানি করুন এবং
                                   <span class="text-orange-600 font-semibold"
-                                    >100 Taka</span
+                                    >Transaction ID</span
                                   >
-                                  and note Transaction ID
+                                  টি কপি করে ডান পাশের ফর্মে দিন।
                                 </p>
                               </div>
                             </div>
                           </div>
 
-                          <!-- Right -->
-                          <div class="border rounded-xl p-6">
+                          <div
+                            class="border border-gray-200 rounded-xl p-6 shadow-sm flex flex-col justify-center text-left"
+                          >
                             <div class="mb-5">
-                              <label class="block mb-2 font-medium">
-                                Enter your Nagad number
-                                <span class="text-red-500">*</span>
-                              </label>
+                              <label
+                                class="block mb-2 font-medium text-gray-700"
+                                >আপনার নগদ নাম্বারটি দিন
+                                <span class="text-red-500">*</span></label
+                              >
                               <input
+                                id="nagadNumber"
                                 type="text"
-                                placeholder="01XXXXXXXXX"
-                                class="w-full border rounded-lg px-4 py-3 focus:ring-2 focus:ring-orange-500 outline-none"
+                                placeholder="০১৭XXXXXXXX"
+                                class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-orange-500 outline-none transition-all"
                               />
                             </div>
-
                             <div class="mb-5">
-                              <label class="block mb-2 font-medium">
-                                Enter your Transaction ID
-                                <span class="text-red-500">*</span>
-                              </label>
+                              <label
+                                class="block mb-2 font-medium text-gray-700"
+                                >Transaction ID টি দিন
+                                <span class="text-red-500">*</span></label
+                              >
                               <input
+                                id="nagadTrx"
                                 type="text"
-                                placeholder="e.g. N1G7D2M5XE"
-                                class="w-full border rounded-lg px-4 py-3 focus:ring-2 focus:ring-orange-500 outline-none"
+                                placeholder="যেমন: N1G7D2M5XE"
+                                class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-orange-500 outline-none transition-all"
                               />
                             </div>
-
                             <div class="flex items-center mb-6">
                               <input
                                 type="checkbox"
-                                class="mr-2 accent-orange-600"
+                                class="mr-2 w-4 h-4 accent-orange-600"
                               />
-                              <span class="text-sm">
-                                I agree to the
+                              <span class="text-sm text-gray-600"
+                                >আমি
                                 <a href="#" class="text-orange-600 underline"
-                                  >terms & conditions</a
+                                  >শর্তাবলীর</a
                                 >
-                              </span>
+                                সাথে একমত</span
+                              >
                             </div>
-
-                            <button
-                              class="w-full bg-orange-600 hover:bg-orange-700 text-white py-3 rounded-lg font-semibold transition"
-                            >
-                              Verify Payment
-                            </button>
+                            <form method="dialog">
+                              <button
+                                class="w-full bg-orange-600 hover:bg-orange-700 text-white py-3 rounded-lg font-bold transition-all shadow-md"
+                              >
+                                ভেরিফাই করে সেভ করুন
+                              </button>
+                            </form>
                           </div>
                         </div>
                       </div>
@@ -692,16 +806,34 @@
                 </div>
               </div>
 
-              <div class="bg-gray-100 p-3 rounded-md text-sm text-gray-600">
-                Pay with cash upon delivery.
+              <div
+                class="bg-blue-50 border border-blue-200 p-4 rounded-lg text-sm text-blue-800 font-medium mt-2"
+              >
+                💡 পণ্য হাতে পেয়ে পেমেন্ট করুন অথবা দ্রুত পেমেন্টের জন্য মোবাইল
+                ব্যাংকিং ব্যবহার করুন।
               </div>
             </div>
 
-            <!-- Button -->
             <button
-              class="w-full mt-6 bg-gray-700 hover:bg-black text-white font-semibold py-3 rounded-md transition"
+              id="submitOrderBtn"
+              class="w-full mt-6 bg-green-600 hover:bg-green-700 text-white font-bold py-4 rounded-lg transition-all shadow-lg hover:shadow-xl flex justify-center items-center gap-2 text-lg"
             >
-              🔒 PLACE ORDER 210.00৳
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              অর্ডার কনফার্ম করুন -
+              <span class="finalTotalDisplay">1060.00</span>৳
             </button>
           </div>
         </div>
@@ -712,7 +844,10 @@
       <div
         class="max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center text-white bg-gray-800 text-sm"
       >
-        © 2026 Mashin Bazar. All rights reserved.
+        © 2026
+        <a class="font-bold hover:text-[#0092C8]" href="https://startedge.net/"
+          >Startedge</a
+        >. All rights reserved.
       </div>
     </footer>
 
