@@ -336,6 +336,7 @@
       </div>
     </section>
 
+    <!-- Order -->
     <section id="order-section" class="py-16 bg-gray-50">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
@@ -410,8 +411,10 @@
                   id="bookFormat"
                   class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-green-500 outline-none bg-white cursor-pointer transition-all"
                 >
-                  <option value="Hard">হার্ড কপি (প্রিন্টেড বই)</option>
-                  <option value="PDF">পিডিএফ ভার্সন</option>
+                  <option value="Hard" selected>
+                    হার্ড কপি (প্রিন্টেড বই) - ২০০০৳
+                  </option>
+                  <option value="PDF">পিডিএফ ভার্সন - ১০০০৳</option>
                 </select>
               </div>
             </div>
@@ -465,14 +468,14 @@
                   </div>
                 </div>
                 <span class="font-bold text-gray-800 whitespace-nowrap">
-                  <span id="itemPriceDisplay">1000.00</span>৳
+                  <span id="itemPriceDisplay">2000.00</span>৳
                 </span>
               </div>
             </div>
 
             <div class="flex justify-between mb-3 text-gray-700 font-medium">
               <span>সাবটোটাল</span>
-              <span><span id="subTotalDisplay">1000.00</span>৳</span>
+              <span><span id="subTotalDisplay">2000.00</span>৳</span>
             </div>
 
             <div id="shippingSection" class="mb-4 transition-all duration-300">
@@ -492,7 +495,7 @@
                     />
                     ঢাকার ভিতরে
                   </span>
-                  <span class="font-bold">80.00৳</span>
+                  <span class="font-bold">60.00৳</span>
                 </label>
                 <label
                   class="flex justify-between items-center cursor-pointer p-3 border border-gray-200 rounded-lg hover:bg-green-50 hover:border-green-500 transition-all"
@@ -507,7 +510,7 @@
                     />
                     ঢাকার বাইরে
                   </span>
-                  <span class="font-bold">150.00৳</span>
+                  <span class="font-bold">120.00৳</span>
                 </label>
               </div>
             </div>
@@ -516,7 +519,7 @@
               class="border-t border-gray-200 mt-4 pt-4 flex justify-between font-bold text-xl text-green-700"
             >
               <span>সর্বমোট</span>
-              <span><span class="finalTotalDisplay">1060.00</span>৳</span>
+              <span><span class="finalTotalDisplay">2060.00</span>৳</span>
             </div>
 
             <div class="mt-8">
@@ -626,7 +629,6 @@
                                 id="bkashNumber"
                                 type="text"
                                 placeholder="০১৭XXXXXXXX"
-                                required
                                 class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-pink-500 outline-none transition-all"
                               />
                             </div>
@@ -640,7 +642,6 @@
                                 id="bkashTrx"
                                 type="text"
                                 placeholder="যেমন: B1K7G2M5XE"
-                                required
                                 class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-pink-500 outline-none transition-all"
                               />
                             </div>
@@ -838,13 +839,12 @@
                 />
               </svg>
               অর্ডার কনফার্ম করুন -
-              <span class="finalTotalDisplay">1060.00</span>৳
+              <span class="finalTotalDisplay">2060.00</span>৳
             </button>
           </div>
         </div>
       </div>
     </section>
-
     <footer>
       <div
         class="max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center text-white bg-gray-800 text-sm"

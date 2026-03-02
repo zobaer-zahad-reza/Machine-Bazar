@@ -22,9 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const nagadNumber = document.getElementById("nagadNumber");
   const nagadTrx = document.getElementById("nagadTrx");
 
-  // Base Price
-  const basePrice = 1000;
-
   // 1. Order Calculation Logic
   function updateOrderDetails() {
     let currentQty = parseInt(quantityEl.innerText);
@@ -32,16 +29,17 @@ document.addEventListener("DOMContentLoaded", () => {
     let shippingCost = 0;
     let finalTotal = 0;
 
+    // Check which format is selected
     if (bookFormat.value === "PDF") {
       shippingSection.classList.add("hidden");
       quantitySection.classList.add("hidden");
-      codBtn.classList.add("hidden");
-      subTotal = basePrice;
+      codBtn.classList.add("hidden"); // Hide Cash on Delivery
+      subTotal = 1000; // PDF Base Price
     } else {
       shippingSection.classList.remove("hidden");
       quantitySection.classList.remove("hidden");
-      codBtn.classList.remove("hidden");
-      subTotal = basePrice * currentQty;
+      codBtn.classList.remove("hidden"); // Show Cash on Delivery
+      subTotal = 2000 * currentQty; // Hard Copy Base Price
 
       shippingRadios.forEach((radio) => {
         if (radio.checked) {
@@ -74,12 +72,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  bookFormat.addEventListener("change", updateOrderDetails);
+  bookFormat.addEventListener("change", () => {
+    // Reset quantity to 1 when changing format
+    quantityEl.innerText = 1;
+    updateOrderDetails();
+  });
+
   shippingRadios.forEach((radio) =>
     radio.addEventListener("change", updateOrderDetails),
   );
 
-  updateOrderDetails();
+  updateOrderDetails(); // Run on load
 
   // 2. Form Submission Logic to Google Sheets
   submitBtn.addEventListener("click", (e) => {
@@ -144,7 +147,7 @@ document.addEventListener("DOMContentLoaded", () => {
     formData.append("NagadNumber", nagadNumber.value.trim());
     formData.append("NagadTrx", nagadTrx.value.trim());
 
-    // ⚠️ REPLACE THIS URL WITH YOUR GOOGLE APPS SCRIPT WEB APP URL ⚠️
+    // GOOGLE APPS SCRIPT WEB APP URL
     const scriptURL =
       "https://script.google.com/macros/s/AKfycbwniLIXhWrcuT4HL8QpfYZnsrZbhLc8lu_zdvvZkRMiPmGBTm2Nk_pc480wARwENGwQ/exec";
 
@@ -164,10 +167,14 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("customerAddress").value = "";
         document.getElementById("customerPhone").value = "";
         document.getElementById("orderNotes").value = "";
+        quantityEl.innerText = 1;
         bkashNumber.value = "";
         bkashTrx.value = "";
         nagadNumber.value = "";
         nagadTrx.value = "";
+
+        // Reset prices back to default
+        updateOrderDetails();
 
         // Reset button UI
         submitBtn.innerHTML = originalBtnText;
