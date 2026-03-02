@@ -1,0 +1,721 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Nav Section -->
+    <nav>
+      <div
+        class="max-w-full mx-auto bg-black px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between"
+      >
+        <img
+          class="w-14"
+          src="./img/WhatsApp Image 2026-02-24 at 2.53.55 AM.jpeg"
+          alt=""
+        />
+        <a
+          href="#order-section"
+          class="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-2 px-4 rounded-md"
+        >
+          অডার করুন
+        </a>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="bg-gray-100">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <!-- Left Image -->
+          <div class="order-2 md:order-1 flex justify-center">
+            <img
+              src="./img/WhatsApp Image 2026-02-23 at 11.45.59 PM.jpeg"
+              alt="শিল্প স্থাপনে কোটিপতি বই"
+              class="w-full max-w-md rounded-xl shadow-xl border-4 border-yellow-500"
+            />
+          </div>
+
+          <!-- Right Content -->
+          <div class="order-1 md:order-2">
+            <!-- Heading -->
+            <h1
+              class="text-3xl md:text-4xl font-bold leading-snug mb-4 text-gray-900"
+            >
+              সাফল্যের সূত্র:
+              <span class="text-red-600">শিল্প স্থাপনে কোটিপতি</span>
+              প্রজেক্ট প্রোফাইল
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="text-lg text-gray-600 mb-6">
+              স্বল্প পুঁজিতে ক্ষুদ্র ও মাঝারি শিল্প স্থাপন করে স্বাবলম্বী হওয়ার
+              পূর্ণাঙ্গ গাইডলাইন।
+            </p>
+
+            <!-- Offer Card -->
+            <div
+              class="bg-black text-white p-6 rounded-xl border-l-4 border-yellow-500 shadow-lg mb-6"
+            >
+              <h2 class="text-yellow-400 text-lg font-semibold mb-3">
+                রমজান স্পেশাল অফার (৫০% ছাড়!)
+              </h2>
+
+              <div class="flex items-center gap-4 mb-2">
+                <span class="text-xl font-bold"> হার্ডকপি: ২০০০৳ </span>
+                <span class="text-gray-400 line-through text-base">
+                  ৪০০০৳
+                </span>
+              </div>
+
+              <p class="text-gray-300">
+                অনলাইন PDF:
+                <span class="font-bold text-white"> ১০০০৳ </span>
+              </p>
+            </div>
+
+            <!-- Features -->
+            <ul class="space-y-3 mb-8 text-base text-gray-800">
+              <li class="flex items-start gap-3">
+                <span class="text-green-600">✔</span>
+                <p>
+                  <strong>পূর্ণাঙ্গ গাইড:</strong> প্রজেক্ট নির্বাচন ও মেশিনারিজ
+                  তালিকা।
+                </p>
+              </li>
+
+              <li class="flex items-start gap-3">
+                <span class="text-yellow-500">🎁</span>
+                <p>
+                  <strong>লটারি অফার:</strong> ১০ লক্ষ টাকার মেশিনারিজ জেতার
+                  সুযোগ!
+                </p>
+              </li>
+
+              <li class="flex items-start gap-3">
+                <span class="text-green-600">💰</span>
+                <p>
+                  <strong>বিশেষ ছাড়:</strong> প্রথম ১০ জনের জন্য ৫০% পর্যন্ত
+                  ছাড়।
+                </p>
+              </li>
+            </ul>
+
+            <!-- CTA -->
+            <a
+              href="#order-section"
+              class="inline-block bg-yellow-500 hover:bg-yellow-600 text-black font-semibold text-lg py-3 px-8 rounded-lg shadow-md transition duration-300"
+            >
+              বইটি সংগ্রহ করুন
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Order btn Section -->
+    <section class="bg-gray-200 py-10">
+      <div class="max-w-2xl mx-auto px-4 text-center">
+        <p class="text-gray-800 mb-6 text-base md:text-lg">
+          প্রয়োজনে ডেলিভারির সময় থাকা অবস্থায় প্যাকেট খুলে চেক করে তারপর
+          পেমেন্ট করতে পারবেন।
+        </p>
+
+        <div class="space-y-4">
+          <!-- Order Button -->
+          <a
+            href="#order-section"
+            id="orderBtn"
+            class="block w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 rounded-md shadow-md transition duration-300"
+          >
+            👍 অর্ডার করতে চাই
+          </a>
+
+          <!-- Call Button -->
+          <a
+            href="tel:01711338720"
+            class="block w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-md shadow-md transition duration-300"
+          >
+            📞 কল করতে ক্লিক করুন - 01711338720
+          </a>
+
+          <!-- WhatsApp Button -->
+          <a
+            href="https://wa.me/8801711338720"
+            target="_blank"
+            class="block w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 rounded-md shadow-md transition duration-300"
+          >
+            💬 Whatsapps - 01711338720
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section class="relative py-20">
+      <!-- Background Image -->
+      <div class="absolute inset-0">
+        <img
+          src="./img/istockphoto-155909002-612x612.jpg"
+          alt="Tea Garden"
+          class="w-full h-full object-cover"
+        />
+        <!-- Green Overlay -->
+        <div class="absolute inset-0"></div>
+      </div>
+
+      <!-- Content -->
+      <div class="relative z-10 max-w-5xl mx-auto px-4 text-center">
+        <!-- Heading -->
+        <h2
+          class="text-3xl md:text-5xl font-bold text-black leading-snug mb-10"
+        >
+          কিভাবে অল্প পুঁজিতে লাভজনক শিল্প শুরু করবেন? জানুন এই ভিডিওতে।
+        </h2>
+
+        <!-- Video Box -->
+        <div class="flex justify-center">
+          <div
+            class="w-full max-w-xl aspect-video bg-black rounded-lg overflow-hidden shadow-xl"
+          >
+            <iframe
+              class="w-full h-full"
+              src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+              title="Tea Video"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            প্রোডাক্ট সম্পর্কে
+          </h2>
+          <div class="w-24 h-1 bg-yellow-500 mx-auto mb-6"></div>
+          <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+            “শিল্প স্থাপনে কোটিপতি” প্রজেক্ট প্রোফাইল একটি পূর্ণাঙ্গ শিল্প গাইড,
+            যা আপনাকে স্বল্প পুঁজিতে সফল উদ্যোক্তা হতে সহায়তা করবে।
+          </p>
+        </div>
+
+        <!-- Content Wrapper -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <!-- Image Side -->
+          <div class="relative flex justify-center">
+            <div
+              class="absolute -top-6 -left-6 w-32 h-32 bg-yellow-200 rounded-full blur-2xl opacity-50"
+            ></div>
+            <img
+              src="./img/WhatsApp Image 2026-02-23 at 11.45.59 PM.jpeg"
+              alt="প্রজেক্ট প্রোফাইল বই"
+              class="relative w-full max-w-sm rounded-2xl shadow-2xl"
+            />
+          </div>
+
+          <!-- Feature Card -->
+          <div class="bg-white p-8 rounded-2xl shadow-xl border">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-8">
+              এই প্রজেক্ট প্রোফাইলে যা পাবেন:
+            </h3>
+
+            <ul class="space-y-5 text-lg text-gray-700">
+              <li class="flex items-start gap-4">
+                <span
+                  class="flex items-center justify-center w-8 h-8 bg-green-100 text-green-600 rounded-full font-bold"
+                  >✓</span
+                >
+                উপযুক্ত প্রজেক্ট নির্বাচন গাইড
+              </li>
+
+              <li class="flex items-start gap-4">
+                <span
+                  class="flex items-center justify-center w-8 h-8 bg-green-100 text-green-600 rounded-full font-bold"
+                  >✓</span
+                >
+                প্রয়োজনীয় মেশিনারিজ তালিকা ও খরচ হিসাব
+              </li>
+
+              <li class="flex items-start gap-4">
+                <span
+                  class="flex items-center justify-center w-8 h-8 bg-green-100 text-green-600 rounded-full font-bold"
+                  >✓</span
+                >
+                স্পেস ও লে-আউট পরিকল্পনা
+              </li>
+
+              <li class="flex items-start gap-4">
+                <span
+                  class="flex items-center justify-center w-8 h-8 bg-green-100 text-green-600 rounded-full font-bold"
+                  >✓</span
+                >
+                আয়–ব্যয়ের বিশ্লেষণ ও ব্রেকইভেন সময়কাল
+              </li>
+
+              <li class="flex items-start gap-4">
+                <span
+                  class="flex items-center justify-center w-8 h-8 bg-green-100 text-green-600 rounded-full font-bold"
+                  >✓</span
+                >
+                প্রোডাক্ট ফর্মুলেশন ও রেসিপি
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Order section -->
+    <section id="order-section" class="py-16 bg-gray-100">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Title -->
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-800">
+            অর্ডার করতে সঠিক তথ্য দিয়ে নিচের ফর্মটি পূরণ করুন
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <!-- Billing Details -->
+          <div class="bg-white p-8 rounded-lg shadow">
+            <h3 class="text-xl font-semibold mb-6">Billing details</h3>
+
+            <div class="space-y-5">
+              <input
+                type="text"
+                placeholder="নাম লিখুন *"
+                class="w-full border border-gray-300 rounded-md px-4 py-3 focus:ring-2 focus:ring-green-500 outline-none"
+              />
+
+              <input
+                type="text"
+                placeholder="সম্পূর্ণ ঠিকানা লিখুন *"
+                class="w-full border border-gray-300 rounded-md px-4 py-3 focus:ring-2 focus:ring-green-500 outline-none"
+              />
+
+              <input
+                type="text"
+                placeholder="ফোন নাম্বার লিখুন *"
+                class="w-full border border-gray-300 rounded-md px-4 py-3 focus:ring-2 focus:ring-green-500 outline-none"
+              />
+
+              <textarea
+                placeholder="Notes about your order (optional)"
+                class="w-full border border-gray-300 rounded-md px-4 py-3 h-24 focus:ring-2 focus:ring-green-500 outline-none"
+              ></textarea>
+            </div>
+          </div>
+
+          <!-- quantity  -->
+          <div class="bg-white p-8 rounded-lg shadow">
+            <h3 class="text-xl font-semibold mb-6">Your order</h3>
+
+            <div class="border-b pb-4 mb-4">
+              <div class="flex justify-between items-center mb-4">
+                <div class="flex items-center gap-4">
+                  <img
+                    class="w-12 h-16 rounded-md"
+                    src="./img/WhatsApp Image 2026-02-23 at 11.45.59 PM.jpeg"
+                    alt=""
+                  />
+
+                  <div>
+                    <p class="font-medium text-gray-800">Product A</p>
+
+                    <div class="flex items-center gap-2 mt-1">
+                      <button
+                        id="minusBtn"
+                        class="font-bold border border-gray-300 rounded px-2 py-1 hover:bg-gray-200"
+                      >
+                        -
+                      </button>
+
+                      <span id="quantity" class="px-2">1</span>
+
+                      <button
+                        id="plusBtn"
+                        class="font-bold border border-gray-300 rounded px-2 py-1 hover:bg-gray-200"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Price -->
+                <span id="price" class="font-semibold text-gray-800">
+                  1000.00৳
+                </span>
+              </div>
+            </div>
+
+            <div class="flex justify-between mb-2">
+              <span>Subtotal</span>
+              <span>1000.00৳</span>
+            </div>
+
+            <!-- Shipping -->
+            <div class="mt-4 mb-4">
+              <p class="font-medium mb-2">Shipping</p>
+
+              <label
+                class="flex justify-between items-center mb-2 cursor-pointer"
+              >
+                <span>
+                  <input type="radio" name="shipping" class="mr-2" />
+                  Outside Dhaka
+                </span>
+                <span>120.00৳</span>
+              </label>
+
+              <label class="flex justify-between items-center cursor-pointer">
+                <span>
+                  <input type="radio" name="shipping" class="mr-2" checked />
+                  Inside Dhaka
+                </span>
+                <span>60.00৳</span>
+              </label>
+            </div>
+
+            <div class="border-t pt-4 flex justify-between font-bold text-lg">
+              <span>Total</span>
+              <span>1060.00৳</span>
+            </div>
+
+            <!-- Payment -->
+            <div class="mt-6">
+              <div class="flex gap-4 mb-4">
+                <!-- Cash on -->
+                <button
+                  class="font-medium mb-2 border-solid border-2 border-gray-300 rounded-md px-4 py-2 hover:bg-gray-200"
+                >
+                  Cash on delivery
+                </button>
+
+                <!-- Bkash -->
+                <div>
+                  <button
+                    class="font-medium mb-2 border-solid border-2 border-gray-300 rounded-md px-4 py-2 hover:bg-gray-200"
+                    onclick="bkash_modal.showModal()"
+                  >
+                    <img
+                      class="h-8 w-16"
+                      src="https://freelogopng.com/images/all_img/1656227518bkash-logo-png.png"
+                      alt=""
+                    />
+                  </button>
+
+                  <dialog id="bkash_modal" class="modal">
+                    <div class="modal-box max-w-4xl p-0 overflow-hidden">
+                      <!-- Close Button -->
+                      <form method="dialog">
+                        <button
+                          class="btn btn-sm btn-circle btn-ghost absolute right-4 top-4"
+                        >
+                          ✕
+                        </button>
+                      </form>
+
+                      <!-- Inner Content -->
+                      <div class="p-8">
+                        <!-- Title -->
+                        <h2 class="text-2xl font-bold mb-2">
+                          Complete Payment
+                        </h2>
+                        <p class="text-pink-600 mb-8">
+                          Pay with bKash, then verify your transaction.
+                        </p>
+
+                        <!-- Main Grid -->
+                        <div class="grid md:grid-cols-2 gap-8">
+                          <!-- Left -->
+                          <div class="border rounded-xl p-6 text-center">
+                            <img
+                              src="./img/bKash payment QR code on shopping bag (1).png"
+                              class="mx-auto mb-6 rounded-lg h-80 w-52 object-cover"
+                              alt="QR"
+                            />
+
+                            <div
+                              class="space-y-4 text-sm text-gray-700 text-left"
+                            >
+                              <div class="flex gap-3">
+                                <div class="step">1</div>
+                                <p>
+                                  Open
+                                  <span class="text-pink-600 font-semibold"
+                                    >bKash</span
+                                  >
+                                  app and tap "Payment"
+                                </p>
+                              </div>
+
+                              <div class="flex gap-3">
+                                <div class="step">2</div>
+                                <p>
+                                  Scan QR or enter merchant number <br /><span
+                                    class="font-semibold"
+                                    >01863209902</span
+                                  >
+                                </p>
+                              </div>
+
+                              <div class="flex gap-3">
+                                <div class="step">3</div>
+                                <p>
+                                  Pay
+                                  <span class="text-pink-600 font-semibold"
+                                    >100 Taka</span
+                                  >
+                                  and note Transaction ID
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Right -->
+                          <div class="border rounded-xl p-6">
+                            <div class="mb-5">
+                              <label class="block mb-2 font-medium">
+                                Enter your bKash number
+                                <span class="text-red-500">*</span>
+                              </label>
+                              <input
+                                type="text"
+                                placeholder="01XXXXXXXXX"
+                                class="w-full border rounded-lg px-4 py-3 focus:ring-2 focus:ring-pink-500 outline-none"
+                              />
+                            </div>
+
+                            <div class="mb-5">
+                              <label class="block mb-2 font-medium">
+                                Enter your Transaction ID
+                                <span class="text-red-500">*</span>
+                              </label>
+                              <input
+                                type="text"
+                                placeholder="e.g. B1K7G2M5XE"
+                                class="w-full border rounded-lg px-4 py-3 focus:ring-2 focus:ring-pink-500 outline-none"
+                              />
+                            </div>
+
+                            <div class="flex items-center mb-6">
+                              <input
+                                type="checkbox"
+                                class="mr-2 accent-pink-600"
+                              />
+                              <span class="text-sm">
+                                I agree to the
+                                <a href="#" class="text-pink-600 underline"
+                                  >terms & conditions</a
+                                >
+                              </span>
+                            </div>
+
+                            <button
+                              class="w-full bg-pink-600 hover:bg-pink-700 text-white py-3 rounded-lg font-semibold transition"
+                            >
+                              Verify Payment
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </dialog>
+                </div>
+
+                <!-- Nagad -->
+                <div>
+                  <button
+                    class="font-medium mb-2 border-solid border-2 border-gray-300 rounded-md px-4 py-2 hover:bg-gray-200"
+                    onclick="nagad_modal.showModal()"
+                  >
+                    <img
+                      class="h-8 w-16"
+                      src="https://www.logo.wine/a/logo/Nagad/Nagad-Logo.wine.svg"
+                      alt=""
+                    />
+                  </button>
+
+                  <dialog id="nagad_modal" class="modal">
+                    <div class="modal-box max-w-4xl p-0 overflow-hidden">
+                      <!-- Close Button -->
+                      <form method="dialog">
+                        <button
+                          class="btn btn-sm btn-circle btn-ghost absolute right-4 top-4"
+                        >
+                          ✕
+                        </button>
+                      </form>
+
+                      <!-- Inner Content -->
+                      <div class="p-8">
+                        <!-- Title -->
+                        <h2 class="text-2xl font-bold mb-2">
+                          Complete Payment
+                        </h2>
+                        <p class="text-orange-600 mb-8">
+                          Pay with Nagad, then verify your transaction.
+                        </p>
+
+                        <!-- Main Grid -->
+                        <div class="grid md:grid-cols-2 gap-8">
+                          <!-- Left -->
+                          <div class="border rounded-xl p-6 text-center">
+                            <img
+                              src="./img/ChatGPT Image Mar 2, 2026, 11_20_10 AM.png"
+                              class="mx-auto mb-6 rounded-lg h-80 w-52 object-cover"
+                              alt="QR"
+                            />
+
+                            <div
+                              class="space-y-4 text-sm text-gray-700 text-left"
+                            >
+                              <div class="flex gap-3">
+                                <div
+                                  class="w-6 h-6 flex items-center justify-center rounded-full bg-orange-500 text-white text-xs"
+                                >
+                                  1
+                                </div>
+                                <p>
+                                  Open
+                                  <span class="text-orange-600 font-semibold"
+                                    >Nagad</span
+                                  >
+                                  app and tap "Send Money"
+                                </p>
+                              </div>
+
+                              <div class="flex gap-3">
+                                <div
+                                  class="w-6 h-6 flex items-center justify-center rounded-full bg-orange-500 text-white text-xs"
+                                >
+                                  2
+                                </div>
+                                <p>
+                                  Scan QR or enter merchant number <br /><span
+                                    class="font-semibold"
+                                    >01863209902</span
+                                  >
+                                </p>
+                              </div>
+
+                              <div class="flex gap-3">
+                                <div
+                                  class="w-6 h-6 flex items-center justify-center rounded-full bg-orange-500 text-white text-xs"
+                                >
+                                  3
+                                </div>
+                                <p>
+                                  Pay
+                                  <span class="text-orange-600 font-semibold"
+                                    >100 Taka</span
+                                  >
+                                  and note Transaction ID
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Right -->
+                          <div class="border rounded-xl p-6">
+                            <div class="mb-5">
+                              <label class="block mb-2 font-medium">
+                                Enter your Nagad number
+                                <span class="text-red-500">*</span>
+                              </label>
+                              <input
+                                type="text"
+                                placeholder="01XXXXXXXXX"
+                                class="w-full border rounded-lg px-4 py-3 focus:ring-2 focus:ring-orange-500 outline-none"
+                              />
+                            </div>
+
+                            <div class="mb-5">
+                              <label class="block mb-2 font-medium">
+                                Enter your Transaction ID
+                                <span class="text-red-500">*</span>
+                              </label>
+                              <input
+                                type="text"
+                                placeholder="e.g. N1G7D2M5XE"
+                                class="w-full border rounded-lg px-4 py-3 focus:ring-2 focus:ring-orange-500 outline-none"
+                              />
+                            </div>
+
+                            <div class="flex items-center mb-6">
+                              <input
+                                type="checkbox"
+                                class="mr-2 accent-orange-600"
+                              />
+                              <span class="text-sm">
+                                I agree to the
+                                <a href="#" class="text-orange-600 underline"
+                                  >terms & conditions</a
+                                >
+                              </span>
+                            </div>
+
+                            <button
+                              class="w-full bg-orange-600 hover:bg-orange-700 text-white py-3 rounded-lg font-semibold transition"
+                            >
+                              Verify Payment
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </dialog>
+                </div>
+              </div>
+
+              <div class="bg-gray-100 p-3 rounded-md text-sm text-gray-600">
+                Pay with cash upon delivery.
+              </div>
+            </div>
+
+            <!-- Button -->
+            <button
+              class="w-full mt-6 bg-gray-700 hover:bg-black text-white font-semibold py-3 rounded-md transition"
+            >
+              🔒 PLACE ORDER 210.00৳
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div
+        class="max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center text-white bg-gray-800 text-sm"
+      >
+        © 2026 Mashin Bazar. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
